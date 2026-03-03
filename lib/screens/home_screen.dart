@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/home_bottombar.dart';
 import '../widgets/items_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -134,6 +135,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
       ),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }

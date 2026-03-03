@@ -1,3 +1,4 @@
+import 'package:coffe_shop/screens/details_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,6 @@ class ItemsWidget extends StatelessWidget {
     'espresso',
     'cold_coffee',
     'black_coffee',
-
   ];
 
   @override
@@ -36,7 +36,9 @@ class ItemsWidget extends StatelessWidget {
             child: Column(
               children: [
                 InkWell(
-                  onTap: (){},
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsScreen()));
+                  },
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset("images/${img[i]}.png",
@@ -47,15 +49,52 @@ class ItemsWidget extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.only(bottom: 8),
-                child: Container(
+                child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text(
-                    img[i],
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        img[i],
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: Colors.white
+                        ),
+                      ),
+                      Text(
+                        img[i],
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white
+                        ),
+                      ),
+                    ],
                   ),
+                ),
+                ),
+                Padding(padding: EdgeInsets.symmetric(vertical: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("\$30",style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                    ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.circular(30)
+                      ),
+                      child: Icon(
+                        Icons.add,color: Colors.white,
+                        size: 20,
+                      ),
+                    )
+                  ],
                 ),
                 )
 
