@@ -7,7 +7,6 @@ class ItemsWidget extends StatelessWidget {
     'latte',
     'espresso',
     'cold_coffee',
-    'black_coffee',
   ];
 
   @override
@@ -37,7 +36,7 @@ class ItemsWidget extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsScreen(img[i])));
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
