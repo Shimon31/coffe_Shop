@@ -165,6 +165,7 @@ class DetailsScreen extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.symmetric(
                           vertical: 20,
+
                           horizontal: 20,
                         ),
                         decoration: BoxDecoration(
