@@ -24,6 +24,7 @@ class DetailsScreen extends StatelessWidget {
                     Icons.arrow_back_ios,
                     color: Colors.white.withOpacity(0.5),
                   ),
+
                 ),
                 SizedBox(height: 10),
                 Center(
