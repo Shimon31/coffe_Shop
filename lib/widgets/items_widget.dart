@@ -7,6 +7,7 @@ class ItemsWidget extends StatelessWidget {
     'latte',
     'espresso',
     'cold_coffee',
+    'black_coffee'
   ];
 
   @override
@@ -15,7 +16,7 @@ class ItemsWidget extends StatelessWidget {
       physics: NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
-      childAspectRatio: (150 / 195),
+      childAspectRatio: (145 / 195),
       children: [
         for (int i = 0; i < img.length; i++)
           Container(
@@ -77,7 +78,7 @@ class ItemsWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("\$30",style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold
                     ),

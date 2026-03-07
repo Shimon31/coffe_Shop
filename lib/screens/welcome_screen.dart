@@ -15,7 +15,7 @@ class WelcomeScreen extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.black,
           image: DecorationImage(
-            image: AssetImage("images/bg.png"),
+            image: AssetImage("images/background.png"),
             fit: BoxFit.cover,
             opacity: .9,
           ),
@@ -34,7 +34,7 @@ class WelcomeScreen extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                     letterSpacing: 1,
                   ),
                 ),
