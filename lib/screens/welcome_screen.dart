@@ -21,6 +21,7 @@ class WelcomeScreen extends StatelessWidget {
 
           ),
         ),
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
